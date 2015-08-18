@@ -18,12 +18,12 @@ Student ID: 211320444 -->
 <body>
 	<div data-role="page">
 		<!-- Input the header information of the page -->
-		<div data-role="header">
+		<header data-role="header">
 			<h1>Feedback</h1>
-		</div>
+		</header>
 		<!-- Input the main ui-content of the page -->
 		<div data-role="main" class="ui-content">
-			<form action="formprocessor.php" method="post">
+			<form id="feedback" action="formprocessor.php" method="post">
 				<div class="ui-field-contain">
 					<p><label>Customer Name:</label></p>
 					<p><input type="text"></p>
@@ -37,8 +37,14 @@ Student ID: 211320444 -->
 					<p><textarea type="text"></textarea></p>
 				</div>
 				<div data-role="controlgroup" data-type="horizontal">
-				<a href="#" data-role="button">Submit</a>
-				<a href="#" data-role="button">Cancel</a>
+					<a href="#" data-role="button">Submit</a>
+					<a href="#" data-role="button" onclick="Reset()">Clear</a>
+					<!-- Script to reset the form fields -->
+					<script>
+					function Reset() {
+						document.getElementById("feedback").reset();
+					}
+					</script>
 				</div>
 			</form>
 		</div>

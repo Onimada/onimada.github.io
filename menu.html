@@ -8,7 +8,9 @@ Student ID: 211320444 -->
 	<title>Page Title</title> 
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-
+	<!-- CSS style sheets created with ThemeRoller -->
+	<link rel="stylesheet" href="css/themes/Restaraunt.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 	<!-- CDN snippets for jQuery Mobile functionality -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -16,20 +18,37 @@ Student ID: 211320444 -->
 </head>
 
 <body>
-<section id="menu" data-role="page">
-	<!-- Input the main ui-content of the page -->
-	<div data-role="main" class="ui-content">
-		<!-- Input the list of the menu using dividers to categorize -->
-		<ul data-role="listview">
-			<li data-role="divider">Appetizers</li>
-				<li><a href="#">Item</a></li>
-			<li data-role="divider">Mains</li>
-				<li><a href="#">Item2</a></li>
-			<li data-role="divider">Desserts</li>
-				<li><a href="#">Item3</a></li>
-			<li data-role="divider">Drinks</li>
-				<li><a href="#">Item4</a></li>
-		</ul>
-	</div>
-</section>
+	<section id="menu" data-role="page">
+		<!-- Input the main ui-content of the page -->
+		<div data-role="content" class="content">
+			<!-- Input the list of the menu using dividers to categorize -->
+			<ul data-role="listview">
+				<li data-role="divider">Appetizers</li>
+					<li><a href="#garlic">Garlic Bread</a></li>
+					<li><a href="#">Wedges</a></li>
+				<li data-role="divider">Mains</li>
+					<li><a href="#">Supreme Pizza</a></li>
+					<li><a href="#">Chicken Parmigiana</a></li>
+				<li data-role="divider">Desserts</li>
+					<li><a href="#">Ice-cream</a></li>
+				<li data-role="divider">Drinks</li>
+					<li><a href="#">Soda</a></li>
+					<li><a href="#">Juice</a></li>
+					<li><a href="#">Beer</a></li>
+					<li><a href="#">Coffee</a></li>
+			</ul>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<h2>&copy;Jason Hansen 2015</h2>
+		</footer>
+	</section>
+	
+	<section id="garlic" data-role="page">
+		<header data-role="header"><h1>Garlic Bread</h1></header>
+		<div data-role="content" class="content">
+			<img src="img/The_Table_Logo.png"></img>
+			<br>
+			<p>dildos</p>
+		</div>
+	</section>
 </body>
